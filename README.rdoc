@@ -1,28 +1,35 @@
 == README
+Example of ONE-TO-ONE( Unicasting )
+Browser(Subscribe)  <-( channel-name )->    Server(Publish)
+                          1 to 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+User1 Browser 1(Subscribe)  <-( user1-channel-name )->      Server(Publish)[ Member ][ Keep the channel-names of all the users as private ]
 
-* Ruby version
+User2 Browser 2(Subscribe)  <-( user2-channel-name )->      Server(Publish)[ Trainer ]
 
-* System dependencies
 
-* Configuration
+User1 wants to send User2 Message
+(1) User1 will post message in an Api {user_2, message_content}
+(2) Server will receive user_2, message_content
+(3) Server will publish to user2-channel-name and since will User2 is subscribed to user2-channel-name he will immediately receive the message
 
-* Database creation
 
-* Database initialization
+(1) How to susbscribe to a channel using Javascript[ because that subscription needs to happen in browser and javascript is the language of the browser ]
+(2) how to publish to a channel using Ruby[ because the publishing part will happen at server and ruby is the languagae of the server][ for this purpose we are going to use pubnub gem ]
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+(Example-2) Chat Group( Broadcasting )
 
-* Deployment instructions
+User1 Browser 1(Subscribe)  <-( chat-channel-name )->      Server(Publish)[ Member ][ Keep the channel-names of all the users as private ]
 
-* ...
+User2 Browser 2(Subscribe)  <-( chat-channel-name )->      Server(Publish)[ Trainer ]
 
+
+User1 wants to send  Message in chat group
+(1) User1 will post message in an Api {chat-channel-name, message_content}
+(2) Server will receive chat-channel-name, message_content
+(3) Server will publish to chat-channel-name and since all users in that channel are subscribed to chat-channel-name they will immediately receive the message
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
