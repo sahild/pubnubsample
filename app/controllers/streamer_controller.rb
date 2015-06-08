@@ -1,5 +1,4 @@
 class StreamerController < ApplicationController
-  before_filter :subscribe, :only => :index
 
   def index
   end
@@ -25,14 +24,5 @@ class StreamerController < ApplicationController
   end
 
   private
-
-  def subscribe
-    puts 'subscribing...'
-    
-    $pubnub.subscribe(
-        :channel => 'pubnub_chat',
-        :callback => $callback
-    ) unless $pubnub.subscription_running?
-  end
 
 end

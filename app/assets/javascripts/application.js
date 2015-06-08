@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require streamer
+//= require pubnub-3.7.1.min.js
