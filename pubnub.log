@@ -693,3 +693,8 @@ D, [2015-06-09T12:24:39.031885 #47633] DEBUG -- Pubnub: Setting default values
 D, [2015-06-09T12:24:39.032051 #47633] DEBUG -- Pubnub: 
 
 Created new Pubnub::Client instance
+D, [2015-06-09T12:41:03.026101 #49525] DEBUG -- Pubnub: Symbolizing options keys
+D, [2015-06-09T12:41:03.026721 #49525] DEBUG -- Pubnub: Setting default values
+D, [2015-06-09T12:41:03.026797 #49525] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance
