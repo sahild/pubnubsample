@@ -678,3 +678,18 @@ D, [2015-06-09T15:20:58.268171 #3469] DEBUG -- Pubnub: Setting default values
 D, [2015-06-09T15:20:58.268273 #3469] DEBUG -- Pubnub: 
 
 Created new Pubnub::Client instance
+D, [2015-06-09T12:10:15.720648 #46960] DEBUG -- Pubnub: Symbolizing options keys
+D, [2015-06-09T12:10:15.721323 #46960] DEBUG -- Pubnub: Setting default values
+D, [2015-06-09T12:10:15.721418 #46960] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance
+D, [2015-06-09T12:10:24.239342 #47171] DEBUG -- Pubnub: Symbolizing options keys
+D, [2015-06-09T12:10:24.239961 #47171] DEBUG -- Pubnub: Setting default values
+D, [2015-06-09T12:10:24.240037 #47171] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance
+D, [2015-06-09T12:24:39.031307 #47633] DEBUG -- Pubnub: Symbolizing options keys
+D, [2015-06-09T12:24:39.031885 #47633] DEBUG -- Pubnub: Setting default values
+D, [2015-06-09T12:24:39.032051 #47633] DEBUG -- Pubnub: 
+
+Created new Pubnub::Client instance

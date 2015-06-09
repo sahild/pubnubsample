@@ -50,5 +50,27 @@ $('#send-button').click(function() {
         message: $("#message-field").val()
       }
     });
-  });  
+  });
+
+    function get_xirsys_servers() {
+        var servers;
+        $.ajax({
+            type: 'POST',
+            url: 'https://api.xirsys.com/getIceServers',
+            data: {
+                room: 'default',
+                application: 'default',
+                domain: 'www.pubnub-example.com',
+                ident: 'pubnub',
+                secret: 'dec77661-9b0e-4b19-90d7-3bc3877e64ce',
+            },
+            success: function(res) {
+                res = JSON.parse(res);
+                if (!res.e) servers = res.d.iceServers;
+            },
+            async: false
+        });
+        return servers;
+    }
 });
+
