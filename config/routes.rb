@@ -4,6 +4,7 @@ PubnubLivestream::Application.routes.draw do
 
   get 'get_messages' => 'streamer#get_messages'
   get 'publish' => 'streamer#publish'
+  get 'dial' => 'streamer#dial'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

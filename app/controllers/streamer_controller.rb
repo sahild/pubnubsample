@@ -2,6 +2,10 @@ class StreamerController < ApplicationController
 
   def index
   end
+  
+  def dial
+    render :layout => false
+  end
 
   def publish
     render :json => $pubnub.publish(
